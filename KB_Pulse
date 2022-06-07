@@ -3,3 +3,4 @@ KB44961 - How to configure license server setting on PCS using REST API
 KB44983 - How to configure NTP server on PCS using REST API
 KB45118 - Reports option missing on the Admin UI
 KB45139 - Unable to access Local virtual machine resources after connecting to the VPN when VM resource IP's are excluded from the PCS
+KB45200 - Azure SAML Custom expression failed to authenticate with a reason “no roles are assigned”
