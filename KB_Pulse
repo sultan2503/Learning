@@ -4,3 +4,5 @@ KB44983 - How to configure NTP server on PCS using REST API
 KB45118 - Reports option missing on the Admin UI
 KB45139 - Unable to access Local virtual machine resources after connecting to the VPN when VM resource IP's are excluded from the PCS
 KB45200 - Azure SAML Custom expression failed to authenticate with a reason “no roles are assigned”
+KB45242 - What fonts can be chosen inside the HTML5 SSH/Telnet configuration
+KB45320 - How to configure Syslog server in PCS via REST API
