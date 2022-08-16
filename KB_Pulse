@@ -6,3 +6,4 @@ KB45139 - Unable to access Local virtual machine resources after connecting to t
 KB45200 - Azure SAML Custom expression failed to authenticate with a reason “no roles are assigned”
 KB45242 - What fonts can be chosen inside the HTML5 SSH/Telnet configuration
 KB45320 - How to configure Syslog server in PCS via REST API
+KB45391 - Usage of the "Override Global Host FQDN" in SAML Auth.
