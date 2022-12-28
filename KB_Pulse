@@ -9,3 +9,4 @@ KB45320 - How to configure Syslog server in PCS via REST API
 KB45391 - Usage of the "Override Global Host FQDN" in SAML Auth.
 KB45444 - How to allow read-only permission for REST API admin.
 KB45536 - How to install Ivanti Secure Access Client in Red Hat
+KB45659 - When joining a cluster, generates the 'License Server configuration mismatch' and "The IP address entered is the internal IP address of this system. Please enter the IP address of an active cluster member." error message
