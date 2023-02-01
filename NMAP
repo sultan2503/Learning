@@ -1,0 +1,19 @@
+nmap --version		Check the version					
+*** NMAP Output ***							
+nmap -sP 192.168.2.0/24 > live_host.txt		Save the output no visibility on cli					
+nmap -oN scan.txt -sP 10.64.40.0/24		See the live output					
+nmap --append -oN scan.txt -sP 10.64.40.0/24		Append the output with existing data					
+nmap -oX scan.xml -sP 10.64.40.0/24		XML formate					
+nmap -oG scan.txt 10.64.40.0/24		Grep file 	use to filter the data latter		Like: want to check XMPP service 		
+  grep xmpp scan.txt							
+nmap --stats-every 2s 10.64.40.0/24		It will use to scan network and will show you the complkication status in perantage . [Ping Scan Timing: About 44.43% done;] 					
+							
+*** Network ***							
+nmap 10.64.40.41		[Scan most used 10k port] [By default, Nmap scans the top 1,000 ports for each scan protocol requested. This catches roughly 93% of the TCP ports and 49% of the UDP ports.]					
+nmap 10.64.40.1 10.64.40.2 10.64.40.3							
+nmap 10.64.40.1,2,3							
+nmap 10.64.40.1-100							
+nmap 10.64.1-100.*							
+							
+*** PORT ***							
+nmap 10.64.40.50 -p-		Check with all port					
