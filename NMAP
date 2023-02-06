@@ -1,3 +1,7 @@
+******************* NMAP *************************
+https://www.stationx.net/nmap-cheat-sheet/
+**************************************************
+
 nmap --version		Check the version					
 *** NMAP Output ***							
 nmap -sP 192.168.2.0/24 > live_host.txt		Save the output no visibility on cli					
