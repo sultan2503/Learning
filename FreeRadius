@@ -1,0 +1,87 @@
+sudo apt-get update && sudo apt-get upgrade
+
+#-- Install Free radius server
+sudo apt-get install freeradius 
+
+#-- Check the version of free radius 
+freeradius -v  
+
+sudo chmod +rwx /etc/freeradius/
+#-- More information about free radius
+sudo ls -la /etc/freeradius/3.*
+
+#-- Network access server config
+sudo nano /etc/freeradius/3.*/clients.conf
+
+#-- Check the status of freeradius server
+sudo systemctl restart freeradius
+sudo systemctl status freeradius
+
+#-- Add users to authentication
+sudo nano /etc/freeradius/3.*/users
+
+
+#-- Testing
+radtest sultan 1234567890 127.0.0.1 0 testing123
+
+#-- While testing turnon debug
+https://www.codegrepper.com/code-examples/whatever/Failed+binding+to+auth+address+127.0.0.1+port+18120+bound+to+server+inner-tunnel
+sudo freeradius -X
+
+
+
+
+
+
+
+
+
+
+
+***** Need to verify this SQL command *****
+#--mysql for freeradius
+sudo apt-get install freeradius-mysql
+
+#--Mysql server
+sudo apt-get install mysql-server
+
+#-- Create a folder
+sudo mkdir -p /var/run/mysqld
+
+#-- Give the permission
+sudo chown mysql:mysql /var/run/mysqld
+
+ sudo mysql_safe --skip-grant-tables &
+
+
+#-- Login to mysql
+sudo mysql -u root
+
+
+#-- Set the root password
+UPDATE mysql.user SET authentication_string=null WHERE User='root';
+
+FLUSH PRIVILEGES;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'dana123!@#';
+
+FLUSH PRIVILEGES;
+exit;
+
+#--List of process for mysql
+ ps aux | grep mysql
+
+#-- kill the process 
+sudo kill -9 4223
+
+sudo systemctl start mysql
+
+#-- Login into mysql
+ mysql -u root -p
+
+
+#--Import config into sql
+
+ALTER USER 'radius'@'localhost' IDENTIFIED BY 'radpass';
+
+GRANT ALL ON radius.* TO 'radius'@'localhost';
